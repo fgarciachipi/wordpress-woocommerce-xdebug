@@ -3,10 +3,11 @@ version: '3.7'
 services:
 
   wordpress-woocommerce:
-    image: fchipi/wordpress-woocommerce-xdebug:v1.0.0
+    image: fchipi/wordpress-woocommerce-xdebug:v1.1.0
     restart: always
     ports:
       - 8081:80
+      - 8443:443
     environment:
       WORDPRESS_DB_HOST: db-woocommerce
       WORDPRESS_DB_USER: exampleuser
